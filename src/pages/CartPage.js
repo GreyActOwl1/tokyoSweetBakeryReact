@@ -13,7 +13,9 @@ const CartPage = () => {
         <ShoppingCartSubHeader />
       </Row>
       <Row>
-        <ShoppingCartSummary />
+        <Col>
+          <ShoppingCartSummary />
+        </Col>
       </Row>
     </div>
   );
