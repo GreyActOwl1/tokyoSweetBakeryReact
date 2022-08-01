@@ -24,8 +24,6 @@ function App() {
         <Route path="shop" element={<ShopPage />} />
         {/* <Route path="shop/products/:productName" element={<{ProductDetailPage}}/> */}
         <Route path="cart" element={<CartPage />} />
-        {/* <Route path="checkout/shipping" element={<ShippingPage/>} /> */}
-        {/* <Route path="checkout/payment" element={<PaymentPage />} /> */}
         <Route path="*" element={<NoPage />} />
       </Routes>
       <Footer />

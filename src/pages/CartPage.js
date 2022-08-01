@@ -9,7 +9,6 @@ import ShoppingCartShippingForm from "../features/shoppingCart/ShoppingCartShipp
 import ShoppingCartPaymentForm from "../features/shoppingCart/ShoppingCartPaymentForm";
 const CartPage = () => {
   const currentCart = useSelector(selectShoppingCart);
-  console.log("CURRENT", currentCart);
 
   const [activeForm, setActiveForm] = useState(1);
 
@@ -35,7 +34,7 @@ const CartPage = () => {
       <Row>
         <Col>
           <ShoppingCartSummary />
-          {activeForm === 1 && <div>form 1</div>}
+          {activeForm === 1 && <ShoppingCartItemList cart={currentCart} />}
           {activeForm === 2 && <div>form 2</div>}
           {activeForm === 3 && <div>form 3</div>}
         </Col>
