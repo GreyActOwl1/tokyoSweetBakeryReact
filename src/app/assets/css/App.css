@@ -1,8 +1,14 @@
+th {
+  width: 15ch;
+}
+.table > :not(caption) > * > .shop-sum-header {
+  background-color: rgba(0, 0, 0, 0.5);
+}
 .App {
   text-align: center;
 }
 
-.featured-display{
+.featured-display {
   background-image: url(https://github.com/GreyActOwl1/tokyoSweetsBakery/blob/colors/img/joshua-bartell-unsplash-wood-bg.jpg?raw=true);
   background-color: transparent;
   text-align: start;

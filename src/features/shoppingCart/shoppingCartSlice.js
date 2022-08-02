@@ -1,5 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-import ShoppingCartItem from "./ShoppingCartItem";
 
 const trialData = [
   {
@@ -12,7 +11,7 @@ const trialData = [
     description: "This simple classic is simply delicious.",
   },
   {
-    name: "Carmalized Walnut Cupcake",
+    name: "Chocolate Pillows ",
     count: 1,
     category: "seasonal",
     rating: "4.5",
@@ -21,7 +20,7 @@ const trialData = [
     description: "These chocolate pillows will have you thinking that you are dreaming.",
   },
   {
-    name: "Chocolate Pillows",
+    name: "Carmalized Walnut Cupcake",
     count: 1,
     category: "seasonal",
     rating: "4",
@@ -33,6 +32,7 @@ const trialData = [
 
 const initialState = {
   shoppingList: trialData,
+  discount: 0.15,
 };
 
 const shoppingCartSlice = createSlice({
@@ -52,11 +52,19 @@ const shoppingCartSlice = createSlice({
       });
       state.shoppingList = newState;
     },
+    deleteItem: (state, action) => {
+      state.shoppingList = state.shoppingList.filter((item) => item.name !== action.payload);
+    },
+    addItem: (state, action) => {
+      state.shoppingList.push(action.payload);
+    },
   },
 });
 
 export const shoppingCartReducer = shoppingCartSlice.reducer;
 
-export const { deleteAll, modifyCount } = shoppingCartSlice.actions;
+export const { deleteAll, deleteItem, modifyCount } = shoppingCartSlice.actions;
 
 export const selectShoppingCart = (state) => state.shoppingCart.shoppingList;
+
+export const selectDiscount = (state) => state.shoppingCart.discount;

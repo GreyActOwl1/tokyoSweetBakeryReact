@@ -33,7 +33,7 @@ const CartPage = () => {
       </Row>
       <Row>
         <Col>
-          <ShoppingCartSummary />
+          <ShoppingCartSummary cart={currentCart} />
           {activeForm === 1 && <ShoppingCartItemList cart={currentCart} />}
           {activeForm === 2 && <div>form 2</div>}
           {activeForm === 3 && <div>form 3</div>}
