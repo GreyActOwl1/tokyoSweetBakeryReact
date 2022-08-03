@@ -1,4 +1,4 @@
-th {
+.table-head {
   width: 15ch;
 }
 .table > :not(caption) > * > .shop-sum-header {

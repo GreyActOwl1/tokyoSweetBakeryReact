@@ -1,5 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
-
+import { TAX_RATE } from "../../app/assets/shared/TAX_RATE";
+import { DISCOUNT_CODE } from "../../app/assets/shared/DISCOUNT_CODE";
 const trialData = [
   {
     name: "Blue Berry Cheese Cake",
@@ -32,7 +33,8 @@ const trialData = [
 
 const initialState = {
   shoppingList: trialData,
-  discount: 0.15,
+  discount: 0,
+  taxRate: TAX_RATE,
 };
 
 const shoppingCartSlice = createSlice({
@@ -58,13 +60,20 @@ const shoppingCartSlice = createSlice({
     addItem: (state, action) => {
       state.shoppingList.push(action.payload);
     },
+    getDiscount: (state, action) => {
+      if (DISCOUNT_CODE[action.payload]) {
+        state.discount = DISCOUNT_CODE[action.payload];
+      } else {
+        state.discount = 0;
+      }
+    },
   },
 });
 
 export const shoppingCartReducer = shoppingCartSlice.reducer;
 
-export const { deleteAll, deleteItem, modifyCount } = shoppingCartSlice.actions;
+export const { deleteAll, deleteItem, modifyCount, getDiscount } = shoppingCartSlice.actions;
 
 export const selectShoppingCart = (state) => state.shoppingCart.shoppingList;
 
-export const selectDiscount = (state) => state.shoppingCart.discount;
+export const selectTaxRate = (state) => state.shoppingCart.taxRate;
