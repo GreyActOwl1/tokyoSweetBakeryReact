@@ -54,7 +54,7 @@ const CartPage = () => {
           <ShoppingCartSummary cart={currentCart} />
           {activeForm === 1 && <ShoppingCartItemList cart={currentCart} clearShopping={clearShopping} goNext={goNext} />}
           {activeForm === 2 && <ShoppingCartShippingForm setFormData={setFormData} goNext={goNext} cancelInfo={cancelInfo} />}
-          {activeForm === 3 && <div>form 3</div>}
+          {activeForm === 3 && <ShoppingCartPaymentForm cancelInfo={cancelInfo} formData={formData} />}
         </Col>
       </Row>
     </div>
