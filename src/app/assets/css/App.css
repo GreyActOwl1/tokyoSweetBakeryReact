@@ -1,9 +1,11 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
 .table-head {
   width: 15ch;
 }
 .table > :not(caption) > * > .shop-sum-header {
   background-color: rgba(0, 0, 0, 0.5);
 }
+
 .App {
   text-align: center;
 }
