@@ -19,11 +19,12 @@ const AboutPage = () => {
   ];
 
   return (
-    <Container fluid>
-      <Row style={{backgroundColor:"#d3d3d3"}}>
-        <h2>Where to find us:</h2>{" "}
+    <Container className="mt-0 px-0" fluid>
+      <Row style={{backgroundColor:"inherit"}}>
+      {/* "#bfdcb5" */}
+        <h2 className="mb-2 border-bottom border-top border-dark py-3 text-decoration-underline " style={{backgroundColor:"#745140"}}>Where to find us:</h2>{" "}
       </Row>
-      <Row classname="mh-25 mb-5" style={{backgroundColor:"#d3d3d3"}}>
+      <Row className="mb-5 mx-0 px-0 mw-100 mh-25" style={{backgroundColor:"inherit"}}>
         <Col sm="6" className="order-last order-sm-first">
           <p>Hours:</p>
           <p>Sunday 10-6</p>
@@ -35,6 +36,7 @@ const AboutPage = () => {
           <p>Saturday 10-7</p>
         </Col>
         <Col>
+        
             <Iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d528.3669862958213!2d-81.33776922901438!3d37.30546758121114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x884e381ddb8462e7%3A0xc17011e8836a752!2s505%20Moore%20St%2C%20Pocahontas%2C%20VA%2024635!5e0!3m2!1sen!2sus!4v1656653837798!5m2!1sen!2sus"
               width="100%"
@@ -45,13 +47,16 @@ const AboutPage = () => {
               allowfullscreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
+              // style={{ width: "100%", height: "55%", paddingBottom: "55%", overflow: "hidden",
+              // marginBottom: "1rem",   position: "absolute" }}
             />
 
           <p>505 Moore Street, Pocahontas, VA 24605, USA</p>
         </Col>
       </Row>
-      <hr />
-      <Row className="mb-5 mt-2">
+      {/* <hr /> */}
+      <Row className="my-2 border-bottom border-top border-dark py-3 text-decoration-underline " style={{backgroundColor:"#745140"}}><h2 text-decoration-underline>Our Story</h2></Row>
+      <Row className="mb-5">
         <Col md="8" className="mx-auto">
           {" "}
           <ImageGallery
