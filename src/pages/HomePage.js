@@ -1,31 +1,22 @@
 import { Container, Row, Col, Button } from "reactstrap";
 import FeaturedProductDisplay from "../components/FeaturedProductDisplay";
-import bakedGoodsDisplay from "../app/assets/img/yeh-xintong-unsplash-hero.jpg";
+import StoreParallaxHero from "../components/StoreParallaxHero";
 
 const HomePage = () => {
   return (
-    <Container fluid>
-      <Row className="parallax-background d-flex justify-content-center">
-        <Col xs="12" md="10" class="d-flex justify-content-center">
-          <div className="parallax-container mx-auto d-flex justify-content-center">
-            <h1 class="parallax">Tokyo Sweets Bakery</h1>
-            <img
-              src={bakedGoodsDisplay}
-              alt="baked goods display"
-              class="parallax parallax-img-background"
-            />
-          </div>
-        </Col>
-      </Row>
+    <Container className="p-0 mw-1600px mx-auto" fluid>
+      <StoreParallaxHero />
 
-      <Row className="my-5 mx-0">
+      <Row className="my-5 mx-auto">
         <Col className="">
           <Button className="btn btn-secondary btn-lg">Shop Now </Button>
-          <hr/>
+          <hr />
         </Col>
       </Row>
-
-      <Row>
+      <Row className="my-5 mx-auto">
+        <h2 className="mt-5 mb-3 text-center"> Featured Documents</h2>
+      </Row>
+      <Row className="my-5 mx-auto">
         <Col>
           <FeaturedProductDisplay />
         </Col>
