@@ -59,51 +59,29 @@ const AboutPage = () => {
       <Row className="mb-5">
         <Col md="8" className="mx-auto">
           {" "}
-          <ImageGallery
-            items={images}
-            showPlayButton={false}
-            showThumbnails={false}
-            showFullscreenButton={false}
-            showBullets={true}
-          />
+          <ImageGallery items={images} showPlayButton={false} showThumbnails={false} showFullscreenButton={false} showBullets={true} />
         </Col>
       </Row>
       <Row className="mb-4">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Sem nulla
-          pharetra diam sit amet nisl suscipit adipiscing. Augue ut lectus arcu
-          bibendum at varius vel pharetra vel. Integer eget aliquet nibh
-          praesent tristique magna sit. Scelerisque varius morbi enim nunc
-          faucibus a pellentesque sit amet. Adipiscing elit pellentesque
-          habitant morbi tristique senectus et netus et. Consectetur adipiscing
-          elit pellentesque habitant morbi tristique senectus. Egestas maecenas
-          pharetra convallis posuere morbi. Eu augue ut lectus arcu bibendum at
-          varius. Quis hendrerit dolor magna eget est. Et malesuada fames ac
-          turpis egestas. Ipsum a arcu cursus vitae congue mauris rhoncus
-          aenean. Pretium quam vulputate dignissim suspendisse in est ante.
-          Ullamcorper malesuada proin libero nunc consequat interdum varius sit
-          amet. Enim eu turpis egestas pretium aenean pharetra magna ac
-          placerat.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sem nulla
+          pharetra diam sit amet nisl suscipit adipiscing. Augue ut lectus arcu bibendum at varius vel pharetra vel. Integer eget aliquet nibh
+          praesent tristique magna sit. Scelerisque varius morbi enim nunc faucibus a pellentesque sit amet. Adipiscing elit pellentesque habitant
+          morbi tristique senectus et netus et. Consectetur adipiscing elit pellentesque habitant morbi tristique senectus. Egestas maecenas pharetra
+          convallis posuere morbi. Eu augue ut lectus arcu bibendum at varius. Quis hendrerit dolor magna eget est. Et malesuada fames ac turpis
+          egestas. Ipsum a arcu cursus vitae congue mauris rhoncus aenean. Pretium quam vulputate dignissim suspendisse in est ante. Ullamcorper
+          malesuada proin libero nunc consequat interdum varius sit amet. Enim eu turpis egestas pretium aenean pharetra magna ac placerat.
         </p>
 
         <p>
-          Euismod in pellentesque massa placerat duis ultricies lacus sed
-          turpis. Nunc mi ipsum faucibus vitae aliquet nec. Tempor orci dapibus
-          ultrices in iaculis. Quam id leo in vitae turpis massa sed. Massa
-          sapien faucibus et molestie. Molestie at elementum eu facilisis sed
-          odio morbi quis. Aliquam nulla facilisi cras fermentum odio eu feugiat
-          pretium nibh. Quam id leo in vitae turpis massa sed elementum. Nulla
-          pellentesque dignissim enim sit amet venenatis urna cursus eget. Morbi
-          tincidunt ornare massa eget egestas. Venenatis tellus in metus
-          vulputate. Amet cursus sit amet dictum sit amet justo donec. Facilisis
-          leo vel fringilla est ullamcorper. Non odio euismod lacinia at quis
-          risus. Sapien et ligula ullamcorper malesuada. Faucibus interdum
-          posuere lorem ipsum dolor. Eu turpis egestas pretium aenean pharetra
-          magna ac placerat vestibulum. Hendrerit gravida rutrum quisque non
-          tellus. Auctor neque vitae tempus quam pellentesque nec nam aliquam.
-          Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim
-          diam.
+          Euismod in pellentesque massa placerat duis ultricies lacus sed turpis. Nunc mi ipsum faucibus vitae aliquet nec. Tempor orci dapibus
+          ultrices in iaculis. Quam id leo in vitae turpis massa sed. Massa sapien faucibus et molestie. Molestie at elementum eu facilisis sed odio
+          morbi quis. Aliquam nulla facilisi cras fermentum odio eu feugiat pretium nibh. Quam id leo in vitae turpis massa sed elementum. Nulla
+          pellentesque dignissim enim sit amet venenatis urna cursus eget. Morbi tincidunt ornare massa eget egestas. Venenatis tellus in metus
+          vulputate. Amet cursus sit amet dictum sit amet justo donec. Facilisis leo vel fringilla est ullamcorper. Non odio euismod lacinia at quis
+          risus. Sapien et ligula ullamcorper malesuada. Faucibus interdum posuere lorem ipsum dolor. Eu turpis egestas pretium aenean pharetra magna
+          ac placerat vestibulum. Hendrerit gravida rutrum quisque non tellus. Auctor neque vitae tempus quam pellentesque nec nam aliquam. Vel
+          fringilla est ullamcorper eget nulla facilisi etiam dignissim diam.
         </p>
       </Row>
     </Container>
