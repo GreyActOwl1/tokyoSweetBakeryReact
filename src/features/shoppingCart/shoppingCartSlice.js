@@ -48,7 +48,7 @@ const shoppingCartSlice = createSlice({
       const { itemName, count } = action.payload;
       const newState = state.shoppingList.map((item) => {
         if (item.name === itemName) {
-          return { ...item, count };
+          return { ...item, count: parseInt(count) };
         }
         return item;
       });

@@ -2,8 +2,8 @@ import { Breadcrumb, BreadcrumbItem } from "reactstrap";
 const ShoppingCartSubHeader = ({ activeForm, setActiveForm }) => {
   return (
     <>
-      <Breadcrumb>
-        <BreadcrumbItem active={activeForm === 1}>
+      <Breadcrumb className="cart-header">
+        <BreadcrumbItem active={activeForm === 1} className="cart-header">
           <a
             href={activeForm === 1 ? null : "#"}
             onClick={() => {
@@ -13,7 +13,7 @@ const ShoppingCartSubHeader = ({ activeForm, setActiveForm }) => {
             Shopping Cart
           </a>
         </BreadcrumbItem>
-        <BreadcrumbItem active={activeForm === 2}>
+        <BreadcrumbItem active={activeForm === 2} className="cart-header">
           <a
             href={activeForm === 2 ? null : "#"}
             onClick={() => {
@@ -23,7 +23,7 @@ const ShoppingCartSubHeader = ({ activeForm, setActiveForm }) => {
             Shipping Details
           </a>
         </BreadcrumbItem>
-        <BreadcrumbItem active={activeForm === 3}>
+        <BreadcrumbItem active={activeForm === 3} className="cart-header">
           <a
             href={activeForm === 3 ? null : "#"}
             onClick={() => {

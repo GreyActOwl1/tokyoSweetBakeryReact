@@ -31,7 +31,6 @@ const CartPage = () => {
   const [activeForm, setActiveForm] = useState(1);
 
   const [formData, setFormData] = useState(defaultForm);
-  console.log("form data", formData);
 
   const goNext = () => {
     setActiveForm(activeForm < 3 ? activeForm + 1 : 3);
@@ -50,11 +49,13 @@ const CartPage = () => {
         <ShoppingCartSubHeader activeForm={activeForm} setActiveForm={setActiveForm} />
       </Row>
       <Row>
-        <Col>
+        <Col className="col-12 col-md-4 order-md-2">
           <ShoppingCartSummary cart={currentCart} />
+        </Col>
+        <Col className="col-12 col-md-8 order-md-1">
           {activeForm === 1 && <ShoppingCartItemList cart={currentCart} clearShopping={clearShopping} goNext={goNext} />}
           {activeForm === 2 && <ShoppingCartShippingForm setFormData={setFormData} goNext={goNext} cancelInfo={cancelInfo} />}
-          {activeForm === 3 && <ShoppingCartPaymentForm cancelInfo={cancelInfo} formData={formData} />}
+          {activeForm === 3 && <ShoppingCartPaymentForm cancelInfo={cancelInfo} currentCart={currentCart} />}
         </Col>
       </Row>
     </div>

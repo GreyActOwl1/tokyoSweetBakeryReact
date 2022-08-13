@@ -3,7 +3,7 @@
   width: 15ch;
 }
 .table > :not(caption) > * > .shop-sum-header {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.25);
 }
 
 .App {
@@ -14,4 +14,16 @@
   background-image: url(https://github.com/GreyActOwl1/tokyoSweetsBakery/blob/colors/img/joshua-bartell-unsplash-wood-bg.jpg?raw=true);
   background-color: transparent;
   text-align: start;
+}
+.cart-header {
+  background-color: rgb(204, 217, 255);
+}
+.cart-header > ol {
+  background-color: rgb(204, 217, 255);
+}
+.cart-item-list {
+  background-color: rgb(256, 256, 256);
+}
+.cart-form {
+  background-color: rgb(250, 250, 250);
 }
